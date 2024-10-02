@@ -1,0 +1,394 @@
+entity|importance|category|chunk_id|type
+alaska|5|organisation|902292e89f814a7daa128be1540458fe|concept
+google summer of code|5|event|902292e89f814a7daa128be1540458fe|concept
+mentor|3|occupation|902292e89f814a7daa128be1540458fe|concept
+open-source|3|concept|902292e89f814a7daa128be1540458fe|concept
+software|3|concept|902292e89f814a7daa128be1540458fe|concept
+development|3|concept|902292e89f814a7daa128be1540458fe|concept
+alaska|5|place|f854d57405064d5a8d4aa3f6f2314d1e|concept
+anchorage|4|place|f854d57405064d5a8d4aa3f6f2314d1e|concept
+alaska developer alliance|3|organisation|f854d57405064d5a8d4aa3f6f2314d1e|concept
+university of alaska anchorage|3|organisation|f854d57405064d5a8d4aa3f6f2314d1e|concept
+university of alaska fairbanks|3|organisation|f854d57405064d5a8d4aa3f6f2314d1e|concept
+google|3|organisation|f854d57405064d5a8d4aa3f6f2314d1e|concept
+healthcare|3|concept|f854d57405064d5a8d4aa3f6f2314d1e|concept
+climate science|3|concept|f854d57405064d5a8d4aa3f6f2314d1e|concept
+polar science|3|concept|f854d57405064d5a8d4aa3f6f2314d1e|concept
+circumpolar north|3|place|f854d57405064d5a8d4aa3f6f2314d1e|concept
+contributor guidelines|1|document|2a800036ce784063b9b0aeed28746e3d|concept
+email|1|object|2a800036ce784063b9b0aeed28746e3d|concept
+email communication|1|event|2a800036ce784063b9b0aeed28746e3d|concept
+erosion modeling|3|concept|2a800036ce784063b9b0aeed28746e3d|concept
+frank witmer|2|person|2a800036ce784063b9b0aeed28746e3d|concept
+research paper|3|document|2a800036ce784063b9b0aeed28746e3d|concept
+submit|1|event|2a800036ce784063b9b0aeed28746e3d|concept
+university of alaska|2|organisation|2a800036ce784063b9b0aeed28746e3d|concept
+arctic|3|place|88d8c61fddbc4d14b8f562aa688f7f94|concept
+coastal erosion|4|concept|88d8c61fddbc4d14b8f562aa688f7f94|concept
+alaska|3|place|88d8c61fddbc4d14b8f562aa688f7f94|concept
+climate change|4|concept|88d8c61fddbc4d14b8f562aa688f7f94|concept
+coastline|4|place|88d8c61fddbc4d14b8f562aa688f7f94|concept
+rate|3|concept|88d8c61fddbc4d14b8f562aa688f7f94|concept
+change|3|concept|88d8c61fddbc4d14b8f562aa688f7f94|concept
+community|3|organisation|88d8c61fddbc4d14b8f562aa688f7f94|concept
+mitigate|3|concept|88d8c61fddbc4d14b8f562aa688f7f94|concept
+adapt|3|concept|88d8c61fddbc4d14b8f562aa688f7f94|concept
+model|3|object|88d8c61fddbc4d14b8f562aa688f7f94|concept
+linear|2|concept|88d8c61fddbc4d14b8f562aa688f7f94|concept
+historical|2|concept|88d8c61fddbc4d14b8f562aa688f7f94|concept
+coastline position|3|object|88d8c61fddbc4d14b8f562aa688f7f94|concept
+rate|3|concept|88d8c61fddbc4d14b8f562aa688f7f94|concept
+future|3|concept|88d8c61fddbc4d14b8f562aa688f7f94|concept
+sea ice|3|object|88d8c61fddbc4d14b8f562aa688f7f94|concept
+wave energy|3|concept|88d8c61fddbc4d14b8f562aa688f7f94|concept
+temperature|3|concept|88d8c61fddbc4d14b8f562aa688f7f94|concept
+quantity|3|concept|88d8c61fddbc4d14b8f562aa688f7f94|concept
+digitize|3|concept|88d8c61fddbc4d14b8f562aa688f7f94|concept
+coastline|4|place|88d8c61fddbc4d14b8f562aa688f7f94|concept
+process|3|concept|88d8c61fddbc4d14b8f562aa688f7f94|concept
+manual|2|concept|88d8c61fddbc4d14b8f562aa688f7f94|concept
+photointerpretation|3|concept|88d8c61fddbc4d14b8f562aa688f7f94|concept
+improve|3|concept|88d8c61fddbc4d14b8f562aa688f7f94|concept
+coastline|4|concept|624525f075e845c789de613f599036fc|concept
+imagery|3|object|624525f075e845c789de613f599036fc|concept
+model|4|object|624525f075e845c789de613f599036fc|concept
+planetlabs|3|organisation|624525f075e845c789de613f599036fc|concept
+training|3|event|624525f075e845c789de613f599036fc|concept
+data|3|object|624525f075e845c789de613f599036fc|concept
+algorithm|3|object|624525f075e845c789de613f599036fc|concept
+thresholding|3|event|624525f075e845c789de613f599036fc|concept
+water|3|concept|624525f075e845c789de613f599036fc|concept
+python|2|object|624525f075e845c789de613f599036fc|concept
+python|4|concept|4e603dbeaf014561af08f002d13d4584|concept
+multi-band satellite imagery|4|concept|4e603dbeaf014561af08f002d13d4584|concept
+geospatial data processing|4|concept|4e603dbeaf014561af08f002d13d4584|concept
+machine learning|4|concept|4e603dbeaf014561af08f002d13d4584|concept
+zeromq|4|concept|4e603dbeaf014561af08f002d13d4584|concept
+concore|4|concept|4e603dbeaf014561af08f002d13d4584|concept
+mark arnold|3|person|4e603dbeaf014561af08f002d13d4584|concept
+pradeeban kathiravelu|3|person|4e603dbeaf014561af08f002d13d4584|concept
+concore|5|concept|9707c2d517e0461f8b125c0a139cdccb|concept
+zeromq|5|concept|9707c2d517e0461f8b125c0a139cdccb|concept
+neuromodulation|4|concept|9707c2d517e0461f8b125c0a139cdccb|concept
+communication|4|concept|9707c2d517e0461f8b125c0a139cdccb|concept
+study|3|event|9707c2d517e0461f8b125c0a139cdccb|concept
+framework|3|concept|9707c2d517e0461f8b125c0a139cdccb|concept
+program|3|object|9707c2d517e0461f8b125c0a139cdccb|concept
+node|3|object|9707c2d517e0461f8b125c0a139cdccb|concept
+forest|3|concept|dc236dafc1d148b0983abb3a6e1abdba|concept
+hypergraph|3|concept|dc236dafc1d148b0983abb3a6e1abdba|concept
+communication|3|concept|dc236dafc1d148b0983abb3a6e1abdba|concept
+study|3|concept|dc236dafc1d148b0983abb3a6e1abdba|concept
+zeromq|3|concept|dc236dafc1d148b0983abb3a6e1abdba|concept
+communication|3|concept|2c4b52bab97345f6a9349ee5b07ea1a0|concept
+mechanism|2|concept|2c4b52bab97345f6a9349ee5b07ea1a0|concept
+execution|3|concept|2c4b52bab97345f6a9349ee5b07ea1a0|concept
+cluster|3|concept|2c4b52bab97345f6a9349ee5b07ea1a0|concept
+zeromq|4|object|2c4b52bab97345f6a9349ee5b07ea1a0|concept
+zeromq|4|concept|3c85cae010654d018b312cafc2386858|concept
+python|4|concept|3c85cae010654d018b312cafc2386858|concept
+matlab|3|concept|3c85cae010654d018b312cafc2386858|concept
+c++|3|concept|3c85cae010654d018b312cafc2386858|concept
+shared-memory|3|concept|3c85cae010654d018b312cafc2386858|concept
+concore|5|organisation|3c85cae010654d018b312cafc2386858|concept
+communication|4|concept|3c85cae010654d018b312cafc2386858|concept
+programming language|3|concept|3c85cae010654d018b312cafc2386858|concept
+dicom|5|concept|5c0d4abb26b94fc38463f30f74fae63c|concept
+dicom implementation|4|concept|5c0d4abb26b94fc38463f30f74fae63c|concept
+dicom queue|3|concept|5c0d4abb26b94fc38463f30f74fae63c|concept
+dicom endpoint|3|concept|5c0d4abb26b94fc38463f30f74fae63c|concept
+dicom communication|3|concept|5c0d4abb26b94fc38463f30f74fae63c|concept
+dicom standard|3|concept|5c0d4abb26b94fc38463f30f74fae63c|concept
+dicom imaging|3|concept|5c0d4abb26b94fc38463f30f74fae63c|concept
+dicom storage|3|concept|5c0d4abb26b94fc38463f30f74fae63c|concept
+dicom messaging|3|concept|5c0d4abb26b94fc38463f30f74fae63c|concept
+dicom tcp|3|concept|5c0d4abb26b94fc38463f30f74fae63c|concept
+dicom modality|3|concept|5c0d4abb26b94fc38463f30f74fae63c|concept
+dicom scanner|3|concept|5c0d4abb26b94fc38463f30f74fae63c|concept
+dicom pacs|3|concept|5c0d4abb26b94fc38463f30f74fae63c|concept
+dicom imaging system|3|concept|5c0d4abb26b94fc38463f30f74fae63c|concept
+dicom image|3|concept|5c0d4abb26b94fc38463f30f74fae63c|concept
+dicom network|3|concept|5c0d4abb26b94fc38463f30f74fae63c|concept
+dicom performance|3|concept|5c0d4abb26b94fc38463f30f74fae63c|concept
+dicom data loss|3|concept|5c0d4abb26b94fc38463f30f74fae63c|concept
+dicom security|3|concept|5c0d4abb26b94fc38463f30f74fae63c|concept
+dicom privacy|3|concept|5c0d4abb26b94fc38463f30f74fae63c|concept
+dicom hostname|2|concept|5c0d4abb26b94fc38463f30f74fae63c|concept
+dicom ip address|2|concept|5c0d4abb26b94fc38463f30f74fae63c|concept
+dicom port|2|concept|5c0d4abb26b94fc38463f30f74fae63c|concept
+dicom ae title|2|concept|5c0d4abb26b94fc38463f30f74fae63c|concept
+diomede|5|object|3b5e123262b2424d91e16d6ff73e2669|concept
+github|3|website|3b5e123262b2424d91e16d6ff73e2669|concept
+discussion|3|event|3b5e123262b2424d91e16d6ff73e2669|concept
+effort|3|concept|3b5e123262b2424d91e16d6ff73e2669|concept
+difficulty|3|concept|3b5e123262b2424d91e16d6ff73e2669|concept
+create|3|event|3b5e123262b2424d91e16d6ff73e2669|concept
+share|3|event|3b5e123262b2424d91e16d6ff73e2669|concept
+album|3|object|3b5e123262b2424d91e16d6ff73e2669|concept
+dicom|3|object|3b5e123262b2424d91e16d6ff73e2669|concept
+data|3|object|3b5e123262b2424d91e16d6ff73e2669|concept
+subset|3|concept|3b5e123262b2424d91e16d6ff73e2669|concept
+query|3|event|3b5e123262b2424d91e16d6ff73e2669|concept
+metadata|3|object|3b5e123262b2424d91e16d6ff73e2669|concept
+identify|3|event|3b5e123262b2424d91e16d6ff73e2669|concept
+seamless|3|concept|3b5e123262b2424d91e16d6ff73e2669|concept
+framework|3|concept|1b4df6024ff44eac841bd4b5c8e392f6|concept
+image|3|object|1b4df6024ff44eac841bd4b5c8e392f6|concept
+album|3|object|1b4df6024ff44eac841bd4b5c8e392f6|concept
+dicom|3|concept|1b4df6024ff44eac841bd4b5c8e392f6|concept
+share|3|concept|1b4df6024ff44eac841bd4b5c8e392f6|concept
+utility|3|object|1b4df6024ff44eac841bd4b5c8e392f6|concept
+album|4|concept|63bf95f07f64404b8369d518948942a1|concept
+image|4|object|63bf95f07f64404b8369d518948942a1|concept
+share|3|event|63bf95f07f64404b8369d518948942a1|concept
+viewer|3|object|63bf95f07f64404b8369d518948942a1|concept
+kheops|3|organisation|63bf95f07f64404b8369d518948942a1|concept
+mediator|3|organisation|63bf95f07f64404b8369d518948942a1|concept
+ohif viewer|3|organisation|63bf95f07f64404b8369d518948942a1|concept
+dicom|2|concept|63bf95f07f64404b8369d518948942a1|concept
+python|2|concept|63bf95f07f64404b8369d518948942a1|concept
+java|2|concept|63bf95f07f64404b8369d518948942a1|concept
+forum|1|concept|b9d06ff050d741f8aeb7d663438a4cde|concept
+effort|1|concept|b9d06ff050d741f8aeb7d663438a4cde|concept
+difficulty|1|concept|b9d06ff050d741f8aeb7d663438a4cde|concept
+beehive|3|concept|b9d06ff050d741f8aeb7d663438a4cde|concept
+integrated|2|concept|b9d06ff050d741f8aeb7d663438a4cde|concept
+community|2|concept|b9d06ff050d741f8aeb7d663438a4cde|concept
+health|2|concept|b9d06ff050d741f8aeb7d663438a4cde|concept
+metrics|2|concept|b9d06ff050d741f8aeb7d663438a4cde|concept
+framework|2|concept|b9d06ff050d741f8aeb7d663438a4cde|concept
+behavioral|2|concept|b9d06ff050d741f8aeb7d663438a4cde|concept
+health|2|concept|b9d06ff050d741f8aeb7d663438a4cde|concept
+supplement|2|concept|b9d06ff050d741f8aeb7d663438a4cde|concept
+healthcare|2|concept|b9d06ff050d741f8aeb7d663438a4cde|concept
+practice|2|concept|b9d06ff050d741f8aeb7d663438a4cde|concept
+alaska|2|place|b9d06ff050d741f8aeb7d663438a4cde|concept
+kathiravelu|1|person|b9d06ff050d741f8aeb7d663438a4cde|concept
+moxley|1|person|b9d06ff050d741f8aeb7d663438a4cde|concept
+michael|1|person|b9d06ff050d741f8aeb7d663438a4cde|concept
+art|3|concept|d787f26eebde4dd9a0be4a5ec443180b|concept
+digitalization|3|concept|d787f26eebde4dd9a0be4a5ec443180b|concept
+image|3|concept|d787f26eebde4dd9a0be4a5ec443180b|concept
+repository|3|object|d787f26eebde4dd9a0be4a5ec443180b|concept
+vulnerability|3|concept|d787f26eebde4dd9a0be4a5ec443180b|concept
+marginalization|3|concept|d787f26eebde4dd9a0be4a5ec443180b|concept
+community|3|place|d787f26eebde4dd9a0be4a5ec443180b|concept
+discrimination|3|concept|d787f26eebde4dd9a0be4a5ec443180b|concept
+health|3|concept|d787f26eebde4dd9a0be4a5ec443180b|concept
+well-being|3|concept|d787f26eebde4dd9a0be4a5ec443180b|concept
+education|3|concept|d787f26eebde4dd9a0be4a5ec443180b|concept
+research|3|concept|d787f26eebde4dd9a0be4a5ec443180b|concept
+outsider art|3|concept|d787f26eebde4dd9a0be4a5ec443180b|concept
+outsider artists|3|concept|d787f26eebde4dd9a0be4a5ec443180b|concept
+university of alaska anchorage|3|organisation|d787f26eebde4dd9a0be4a5ec443180b|concept
+departments of computer science and human services|3|organisation|d787f26eebde4dd9a0be4a5ec443180b|concept
+beehive|5|object|f6ba2ceb9d554faf801f67faf7de857c|concept
+alaska|3|place|f6ba2ceb9d554faf801f67faf7de857c|concept
+anchorage|3|place|f6ba2ceb9d554faf801f67faf7de857c|concept
+data|3|concept|f6ba2ceb9d554faf801f67faf7de857c|concept
+framework|3|concept|f6ba2ceb9d554faf801f67faf7de857c|concept
+research|3|concept|f6ba2ceb9d554faf801f67faf7de857c|concept
+image|3|object|f6ba2ceb9d554faf801f67faf7de857c|concept
+database|3|object|f6ba2ceb9d554faf801f67faf7de857c|concept
+user|3|person|f6ba2ceb9d554faf801f67faf7de857c|concept
+interaction|3|concept|f6ba2ceb9d554faf801f67faf7de857c|concept
+retrieval|3|concept|f6ba2ceb9d554faf801f67faf7de857c|concept
+orientation|3|concept|f6ba2ceb9d554faf801f67faf7de857c|concept
+instruction|3|concept|f6ba2ceb9d554faf801f67faf7de857c|concept
+arts|3|concept|f6ba2ceb9d554faf801f67faf7de857c|concept
+photography|3|concept|f6ba2ceb9d554faf801f67faf7de857c|concept
+health|3|concept|f6ba2ceb9d554faf801f67faf7de857c|concept
+well-being|3|concept|f6ba2ceb9d554faf801f67faf7de857c|concept
+people|3|person|f6ba2ceb9d554faf801f67faf7de857c|concept
+advocacy|3|concept|f6ba2ceb9d554faf801f67faf7de857c|concept
+database|3|concept|0073f5f75cf046f6a17f937a37d1c983|concept
+python|3|concept|0073f5f75cf046f6a17f937a37d1c983|concept
+java|3|concept|0073f5f75cf046f6a17f937a37d1c983|concept
+apache maven|3|concept|0073f5f75cf046f6a17f937a37d1c983|concept
+github|3|concept|0073f5f75cf046f6a17f937a37d1c983|concept
+beehive|3|concept|0073f5f75cf046f6a17f937a37d1c983|concept
+discussion forum|3|concept|0073f5f75cf046f6a17f937a37d1c983|concept
+effort|3|concept|0073f5f75cf046f6a17f937a37d1c983|concept
+difficulty level|3|concept|0073f5f75cf046f6a17f937a37d1c983|concept
+awanta|4|concept|0073f5f75cf046f6a17f937a37d1c983|concept
+ripe atlas|4|concept|0073f5f75cf046f6a17f937a37d1c983|concept
+internet measurements|4|concept|0073f5f75cf046f6a17f937a37d1c983|concept
+mentor|3|concept|0073f5f75cf046f6a17f937a37d1c983|concept
+pradeepan kathiravelu|3|person|0073f5f75cf046f6a17f937a37d1c983|concept
+eleonora stadtmã¼ller caballero|3|person|0073f5f75cf046f6a17f937a37d1c983|concept
+internet|3|concept|1ee63c5babb44c29b3b6c61a2abe9547|concept
+network|3|concept|1ee63c5babb44c29b3b6c61a2abe9547|concept
+router|3|object|1ee63c5babb44c29b3b6c61a2abe9547|concept
+scheduling|3|concept|1ee63c5babb44c29b3b6c61a2abe9547|concept
+path|3|concept|1ee63c5babb44c29b3b6c61a2abe9547|concept
+latency|3|concept|1ee63c5babb44c29b3b6c61a2abe9547|concept
+ping|2|concept|1ee63c5babb44c29b3b6c61a2abe9547|concept
+traceroute|2|concept|1ee63c5babb44c29b3b6c61a2abe9547|concept
+ripe atlas|4|organisation|1ee63c5babb44c29b3b6c61a2abe9547|concept
+probe|3|object|1ee63c5babb44c29b3b6c61a2abe9547|concept
+anchor|3|object|1ee63c5babb44c29b3b6c61a2abe9547|concept
+volunteer|2|person|1ee63c5babb44c29b3b6c61a2abe9547|concept
+router|3|object|1ee63c5babb44c29b3b6c61a2abe9547|concept
+software|3|object|1ee63c5babb44c29b3b6c61a2abe9547|concept
+measurement|3|concept|1ee63c5babb44c29b3b6c61a2abe9547|concept
+internet scale|3|concept|1ee63c5babb44c29b3b6c61a2abe9547|concept
+state-of-the-art|3|concept|1ee63c5babb44c29b3b6c61a2abe9547|concept
+scientific novelty|3|concept|1ee63c5babb44c29b3b6c61a2abe9547|concept
+circumpolar north|3|place|35c8ca24285e419eab27237132e1c21e|concept
+alaska|3|place|35c8ca24285e419eab27237132e1c21e|concept
+canadian north|3|place|35c8ca24285e419eab27237132e1c21e|concept
+internet connectivity|3|concept|35c8ca24285e419eab27237132e1c21e|concept
+probe|3|object|ef941797096142a180ef07b2cf929bc7|concept
+network|3|concept|ef941797096142a180ef07b2cf929bc7|concept
+performance|3|concept|ef941797096142a180ef07b2cf929bc7|concept
+time|3|concept|ef941797096142a180ef07b2cf929bc7|concept
+city|3|place|ef941797096142a180ef07b2cf929bc7|concept
+measurement|3|concept|ef941797096142a180ef07b2cf929bc7|concept
+network scheduling|3|concept|ef941797096142a180ef07b2cf929bc7|concept
+ripe atlas|3|organisation|ef941797096142a180ef07b2cf929bc7|concept
+client|2|object|ef941797096142a180ef07b2cf929bc7|concept
+virtual router|2|object|ef941797096142a180ef07b2cf929bc7|concept
+path|2|concept|ef941797096142a180ef07b2cf929bc7|concept
+source|2|concept|ef941797096142a180ef07b2cf929bc7|concept
+destination|2|concept|ef941797096142a180ef07b2cf929bc7|concept
+python|2|object|ef941797096142a180ef07b2cf929bc7|concept
+code challenge|3|concept|169fef76c1444fcb82d307548ab7732d|concept
+python|3|concept|169fef76c1444fcb82d307548ab7732d|concept
+github|3|object|169fef76c1444fcb82d307548ab7732d|concept
+effort|3|concept|169fef76c1444fcb82d307548ab7732d|concept
+difficulty level|3|concept|169fef76c1444fcb82d307548ab7732d|concept
+telehealth|3|concept|169fef76c1444fcb82d307548ab7732d|concept
+l4s|3|concept|169fef76c1444fcb82d307548ab7732d|concept
+mentor|3|person|169fef76c1444fcb82d307548ab7732d|concept
+pradeepan kathiravelu|2|person|169fef76c1444fcb82d307548ab7732d|concept
+chalinda weerasinghe|2|person|169fef76c1444fcb82d307548ab7732d|concept
+alaska|4|place|71403a0c3ba349cf8014cd58b25685f9|concept
+fairbanks|3|place|71403a0c3ba349cf8014cd58b25685f9|concept
+anchorage|3|place|71403a0c3ba349cf8014cd58b25685f9|concept
+healthcare|3|concept|71403a0c3ba349cf8014cd58b25685f9|concept
+telehealth|4|concept|71403a0c3ba349cf8014cd58b25685f9|concept
+alaska native tribal health consortium|3|organisation|71403a0c3ba349cf8014cd58b25685f9|concept
+patient|3|concept|71403a0c3ba349cf8014cd58b25685f9|concept
+provider|3|concept|71403a0c3ba349cf8014cd58b25685f9|concept
+satisfaction|3|concept|71403a0c3ba349cf8014cd58b25685f9|concept
+comfort|3|concept|71403a0c3ba349cf8014cd58b25685f9|concept
+forum|3|concept|bc91606cc46344b59ff4847cffdadfc8|concept
+effort|3|concept|bc91606cc46344b59ff4847cffdadfc8|concept
+difficulty|3|concept|bc91606cc46344b59ff4847cffdadfc8|concept
+matlab|3|object|bc91606cc46344b59ff4847cffdadfc8|concept
+image|3|object|bc91606cc46344b59ff4847cffdadfc8|concept
+dicom|4|concept|bc91606cc46344b59ff4847cffdadfc8|concept
+scanner|3|object|bc91606cc46344b59ff4847cffdadfc8|concept
+pacs|3|object|bc91606cc46344b59ff4847cffdadfc8|concept
+storage|3|concept|bc91606cc46344b59ff4847cffdadfc8|concept
+tcp|3|object|bc91606cc46344b59ff4847cffdadfc8|concept
+dicom|5|concept|a19bdf7e302f49ef99292320c1d7fc2f|concept
+image|4|concept|a19bdf7e302f49ef99292320c1d7fc2f|concept
+scanner|3|object|a19bdf7e302f49ef99292320c1d7fc2f|concept
+pacs|3|object|a19bdf7e302f49ef99292320c1d7fc2f|concept
+research cluster|3|object|a19bdf7e302f49ef99292320c1d7fc2f|concept
+anonymize|3|event|a19bdf7e302f49ef99292320c1d7fc2f|concept
+export|3|event|a19bdf7e302f49ef99292320c1d7fc2f|concept
+metadata|3|concept|a19bdf7e302f49ef99292320c1d7fc2f|concept
+machine learning|3|concept|a19bdf7e302f49ef99292320c1d7fc2f|concept
+pipeline|3|concept|a19bdf7e302f49ef99292320c1d7fc2f|concept
+matlab|4|organisation|cc3a713aefa24110b76061a26fe7575c|concept
+dicom|4|concept|cc3a713aefa24110b76061a26fe7575c|concept
+file system|3|object|cc3a713aefa24110b76061a26fe7575c|concept
+region-of-interest|3|concept|cc3a713aefa24110b76061a26fe7575c|concept
+dicom-rt|3|concept|cc3a713aefa24110b76061a26fe7575c|concept
+deep learning|3|concept|cc3a713aefa24110b76061a26fe7575c|concept
+dicom|3|concept|cc3a713aefa24110b76061a26fe7575c|concept
+nifti|3|concept|cc3a713aefa24110b76061a26fe7575c|concept
+pacs|3|concept|cc3a713aefa24110b76061a26fe7575c|concept
+scanners|3|object|cc3a713aefa24110b76061a26fe7575c|concept
+matlab|3|organisation|cc3a713aefa24110b76061a26fe7575c|concept
+dicom toolkit|3|object|cc3a713aefa24110b76061a26fe7575c|concept
+server|3|object|cc3a713aefa24110b76061a26fe7575c|concept
+matlab|3|organisation|cc3a713aefa24110b76061a26fe7575c|concept
+file exchange|3|object|cc3a713aefa24110b76061a26fe7575c|concept
+dicom server connection|3|object|cc3a713aefa24110b76061a26fe7575c|concept
+locally|3|misc|cc3a713aefa24110b76061a26fe7575c|concept
+code|3|object|cc3a713aefa24110b76061a26fe7575c|concept
+recently|3|misc|cc3a713aefa24110b76061a26fe7575c|concept
+tested|3|event|cc3a713aefa24110b76061a26fe7575c|concept
+code|4|concept|454f49220db041a9ba566e69fb244a0e|concept
+matlab|3|organisation|454f49220db041a9ba566e69fb244a0e|concept
+version|3|concept|454f49220db041a9ba566e69fb244a0e|concept
+test|3|event|454f49220db041a9ba566e69fb244a0e|concept
+project|3|concept|9fffc860d93445dca915a5251cd9a705|concept
+status|2|concept|9fffc860d93445dca915a5251cd9a705|concept
+research|2|concept|9fffc860d93445dca915a5251cd9a705|concept
+matlab|4|object|97652989d4c2422780f57491988502b3|concept
+dicom|4|concept|97652989d4c2422780f57491988502b3|concept
+processing|3|event|97652989d4c2422780f57491988502b3|concept
+framework|3|object|97652989d4c2422780f57491988502b3|concept
+image|3|object|97652989d4c2422780f57491988502b3|concept
+networking|2|concept|97652989d4c2422780f57491988502b3|concept
+google scholar|2|organisation|97652989d4c2422780f57491988502b3|concept
+roi|2|concept|97652989d4c2422780f57491988502b3|concept
+deep learning|2|concept|97652989d4c2422780f57491988502b3|concept
+tcia|2|organisation|97652989d4c2422780f57491988502b3|concept
+cancer|2|concept|97652989d4c2422780f57491988502b3|concept
+data|3|concept|91454d211432401599f84a85c983acb4|concept
+patient|3|concept|91454d211432401599f84a85c983acb4|concept
+research|4|concept|91454d211432401599f84a85c983acb4|concept
+use case|3|concept|91454d211432401599f84a85c983acb4|concept
+forest fire|5|event|884e895f29434ad7a418693320ff240b|concept
+aerial image|4|object|884e895f29434ad7a418693320ff240b|concept
+severity|3|concept|884e895f29434ad7a418693320ff240b|concept
+intensity|3|concept|884e895f29434ad7a418693320ff240b|concept
+tracking|3|event|884e895f29434ad7a418693320ff240b|concept
+detection|3|event|884e895f29434ad7a418693320ff240b|concept
+rescue mission|3|event|884e895f29434ad7a418693320ff240b|concept
+resilience planning|3|event|884e895f29434ad7a418693320ff240b|concept
+loss of life|2|event|884e895f29434ad7a418693320ff240b|concept
+pollution|2|concept|884e895f29434ad7a418693320ff240b|concept
+services|2|concept|884e895f29434ad7a418693320ff240b|concept
+alaska|2|place|884e895f29434ad7a418693320ff240b|concept
+boreal forest|2|place|884e895f29434ad7a418693320ff240b|concept
+frame|3|object|55b983ed71474420aed326d364dd0623|concept
+image|3|object|55b983ed71474420aed326d364dd0623|concept
+video|3|object|55b983ed71474420aed326d364dd0623|concept
+forest fire|5|concept|55b983ed71474420aed326d364dd0623|concept
+deep learning|4|concept|55b983ed71474420aed326d364dd0623|concept
+model|3|object|55b983ed71474420aed326d364dd0623|concept
+bounding box|3|object|55b983ed71474420aed326d364dd0623|concept
+size|2|concept|55b983ed71474420aed326d364dd0623|concept
+nasa|2|organisation|55b983ed71474420aed326d364dd0623|concept
+university of alaska fairbanks|2|organisation|55b983ed71474420aed326d364dd0623|concept
+fire|4|event|31dac79dd505415bb1b017aa9051c0f3|concept
+frame|3|object|31dac79dd505415bb1b017aa9051c0f3|concept
+size|3|concept|31dac79dd505415bb1b017aa9051c0f3|concept
+chart|3|object|31dac79dd505415bb1b017aa9051c0f3|concept
+deploy|3|event|31dac79dd505415bb1b017aa9051c0f3|concept
+jetson|3|object|31dac79dd505415bb1b017aa9051c0f3|concept
+python|2|object|31dac79dd505415bb1b017aa9051c0f3|concept
+deep|2|concept|31dac79dd505415bb1b017aa9051c0f3|concept
+neural|2|concept|31dac79dd505415bb1b017aa9051c0f3|concept
+network|2|object|31dac79dd505415bb1b017aa9051c0f3|concept
+experience|2|concept|31dac79dd505415bb1b017aa9051c0f3|concept
+model|2|object|31dac79dd505415bb1b017aa9051c0f3|concept
+github|2|object|31dac79dd505415bb1b017aa9051c0f3|concept
+forum|2|object|31dac79dd505415bb1b017aa9051c0f3|concept
+effort|2|concept|31dac79dd505415bb1b017aa9051c0f3|concept
+difficulty|2|concept|31dac79dd505415bb1b017aa9051c0f3|concept
+java|2|object|31dac79dd505415bb1b017aa9051c0f3|concept
+julia|2|object|31dac79dd505415bb1b017aa9051c0f3|concept
+concore|2|object|31dac79dd505415bb1b017aa9051c0f3|concept
+library|2|object|31dac79dd505415bb1b017aa9051c0f3|concept
+reference|2|concept|31dac79dd505415bb1b017aa9051c0f3|concept
+implementation|2|concept|31dac79dd505415bb1b017aa9051c0f3|concept
+concore|5|concept|b0547484683c4f8b94cfb5afa1ea8ea0|concept
+library|3|concept|b0547484683c4f8b94cfb5afa1ea8ea0|concept
+implementation|3|concept|b0547484683c4f8b94cfb5afa1ea8ea0|concept
+language|3|concept|b0547484683c4f8b94cfb5afa1ea8ea0|concept
+python|3|concept|b0547484683c4f8b94cfb5afa1ea8ea0|concept
+java|3|concept|b0547484683c4f8b94cfb5afa1ea8ea0|concept
+julia|3|concept|b0547484683c4f8b94cfb5afa1ea8ea0|concept
+github|3|organisation|371ee8446d814b53a6782a8c502ae18e|concept
+java|3|concept|371ee8446d814b53a6782a8c502ae18e|concept
+julia|3|concept|371ee8446d814b53a6782a8c502ae18e|concept
+python|3|concept|371ee8446d814b53a6782a8c502ae18e|concept
+hours|3|concept|371ee8446d814b53a6782a8c502ae18e|concept
+difficulty|3|concept|371ee8446d814b53a6782a8c502ae18e|concept
