@@ -1,2 +1,3 @@
 gitme
-
+venv
+.env
