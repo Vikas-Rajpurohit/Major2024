@@ -6,6 +6,11 @@ from selenium.webdriver.chrome.options import Options
 from dotenv import load_dotenv
 import os
 import google.generativeai as genai
+from llama_index.core import SimpleDirectoryReader, VectorStoreIndex
+from llama_index.core.service_context import ServiceContext
+from llama_index.core.indices.knowledge_graph.base import KnowledgeGraphIndex
+from llama_index.core.graph_stores import SimpleGraphStore
+from llama_index.core.storage.storage_context import StorageContext
 
 load_dotenv()
 app = Flask(__name__)
@@ -124,6 +129,73 @@ def describe_folder():
             })
 
         return jsonify({'descriptions': descriptions}), 200
+
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+@app.route('/upload-file', methods=['POST'])
+def upload_file():
+    try:
+        file = request.files['file']
+
+        if not file:
+            return jsonify({'error': 'File is required'}), 400
+
+        # Read the file content and process it into documents
+        file_content = file.read().decode('utf-8')
+        documents = SimpleDirectoryReader().from_string(file_content)
+
+        # Create the knowledge graph and index
+        service_context = ServiceContext.from_defaults(chunk_size=256)
+
+        graph_store = SimpleGraphStore()
+        storage_context = StorageContext.from_defaults(graph_store=graph_store)
+
+        index = KnowledgeGraphIndex.from_documents(
+            documents=documents,
+            max_triplets_per_chunk=3,
+            service_context=service_context,
+            storage_context=storage_context,
+            include_embeddings=True
+        )
+
+        # Store the processed data in a document (you can persist it if needed)
+        storage_context.persist(persist_dir='./storage')
+
+        return jsonify({'message': 'File processed and knowledge graph created successfully'}), 200
+
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+# API 2: Query the knowledge graph based on stored information
+@app.route('/query-knowledge', methods=['POST'])
+def query_knowledge():
+    try:
+        query = request.json.get('query')
+
+        if not query:
+            return jsonify({'error': 'Query is required'}), 400
+
+        # Rebuild storage context and load the index
+        storage_context = StorageContext.from_defaults(persist_dir="./storage")
+        index = KnowledgeGraphIndex.load_index_from_storage(storage_context)
+
+        query_engine = index.as_query_engine(
+            include_text=True,
+            response_mode="tree_summarize",
+            embedding_mode="hybrid",
+            similarity_top_k=5
+        )
+
+        # Use Gemini to fetch answers
+        prompt = f"""<|system|>Please check if the following pieces of context have any mention of the keywords provided in the Question. If not, then say that you don't know. Please don’t make up an answer.</s>
+        <|user|>Question: {query}
+        Helpful Answer:</s>"""
+
+        response = query_engine.query(prompt)
+        return jsonify({'response': response.response.split("<|assistant|>")[-1].strip()}), 200
 
     except Exception as e:
         return jsonify({'error': str(e)}), 500
