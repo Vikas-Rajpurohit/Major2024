@@ -4,19 +4,41 @@ from selenium.webdriver.chrome.service import Service
 from bs4 import BeautifulSoup
 from selenium.webdriver.chrome.options import Options
 from dotenv import load_dotenv
+from flask_cors import CORS
 import os
+import asyncio
+from llama_index.core import ServiceContext
+from concurrent.futures import ThreadPoolExecutor
+from flask import Flask, request, jsonify
 import google.generativeai as genai
-from llama_index.core import SimpleDirectoryReader, VectorStoreIndex
-from llama_index.core.service_context import ServiceContext
-from llama_index.core.indices.knowledge_graph.base import KnowledgeGraphIndex
+from llama_index.core import SimpleDirectoryReader, KnowledgeGraphIndex
+from llama_index.core import Settings
 from llama_index.core.graph_stores import SimpleGraphStore
 from llama_index.core.storage.storage_context import StorageContext
+# from llama_index.llm_providers import HuggingFaceInferenceAPI
+# from langchain.embeddings import HuggingFaceInferenceAPIEmbeddings
+# from llama_index.legacy.embeddings.langchain import LangchainEmbedding
 
 load_dotenv()
 app = Flask(__name__)
-
+CORS(app)
 # Set up Gemini API with your API key
 genai.configure(api_key=os.environ["API_KEY"])
+
+Settings.chunk_size = 512
+# executor = ThreadPoolExecutor()
+
+# HF_TOKEN = "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"
+# llm = HuggingFaceInferenceAPI(
+#     model_name="HuggingFaceH4/zephyr-7b-beta", token=HF_TOKEN
+# )
+
+# embed_model = LangchainEmbedding(
+#     HuggingFaceInferenceAPIEmbeddings(
+#         api_key=HF_TOKEN, model_name="thenlper/gte-large")
+# )
+# Settings.llm = llm
+# Settings.embed_model = embed_model
 
 # Selenium setup
 options = Options()
@@ -33,7 +55,7 @@ def scrape_github_repo(repo_url):
 
     driver = webdriver.Chrome(service=service, options=options)
 
-    def dfs(folder_url, indent, file, file_names, folder_names):
+    def dfs(folder_url, indent, file_names, folder_names):
         if folder_url in visited_links:
             return
         visited_links.add(folder_url)
@@ -44,14 +66,14 @@ def scrape_github_repo(repo_url):
         folder_links = folder_soup.select('a.Link--primary:not([class*=" "])')
 
         for link in folder_links[::2]:
-            name = link.get_text()
+            name = link.get_text().strip()
 
             if '.' in name:
                 file_names.append(name)
             else:
                 folder_names.append(name)
                 file_structure[name] = {'files': [], 'folders': []}
-                dfs(folder_url + '/' + name, indent + 1, file,
+                dfs(folder_url + '/' + name, indent + 1,
                     file_structure[name]['files'], file_structure[name]['folders'])
 
     driver.get(repo_url)
@@ -59,18 +81,17 @@ def scrape_github_repo(repo_url):
     page_source = driver.page_source
     soup = BeautifulSoup(page_source, 'html.parser')
 
+    file_structure['root'] = {'files': [], 'folders': []}
     file_links = soup.select('a.Link--primary:not([class*=" "])')
 
-    file_structure['root'] = {'files': [], 'folders': []}
-
     for link in file_links[::2]:
-        name = link.get_text()
+        name = link.get_text().strip()
         if '.' in name:
             file_structure['root']['files'].append(name)
         else:
             file_structure['root']['folders'].append(name)
             file_structure[name] = {'files': [], 'folders': []}
-            dfs(repo_url + '/tree/master/' + name, 1, None,
+            dfs(repo_url + '/tree/master/' + name, 1,
                 file_structure[name]['files'], file_structure[name]['folders'])
 
     driver.quit()
@@ -133,43 +154,100 @@ def describe_folder():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
+# Asynchronous function to create the knowledge graph
 
-@app.route('/upload-file', methods=['POST'])
-def upload_file():
+
+# def create_knowledge_graph(docs):
     try:
-        file = request.files['file']
+        # Log before creating the index
+        print("Starting the creation of the knowledge graph index...")
 
-        if not file:
-            return jsonify({'error': 'File is required'}), 400
-
-        # Read the file content and process it into documents
-        file_content = file.read().decode('utf-8')
-        documents = SimpleDirectoryReader().from_string(file_content)
-
-        # Create the knowledge graph and index
-        service_context = ServiceContext.from_defaults(chunk_size=256)
-
+        # Create the knowledge graph index
         graph_store = SimpleGraphStore()
         storage_context = StorageContext.from_defaults(graph_store=graph_store)
 
         index = KnowledgeGraphIndex.from_documents(
-            documents=documents,
+            documents=docs,
             max_triplets_per_chunk=3,
-            service_context=service_context,
             storage_context=storage_context,
             include_embeddings=True
         )
 
-        # Store the processed data in a document (you can persist it if needed)
+        # Log after creating the index
+        print("Knowledge graph index created successfully.")
+
+        # Persist the processed data
         storage_context.persist(persist_dir='./storage')
+        print("Data persisted to './storage'")
+
+    except Exception as e:
+        print(f"Error occurred during knowledge graph creation: {e}")
+
+
+@app.route('/upload-file', methods=['POST'])
+def upload_file():
+    try:
+        # Check if 'file' is part of the request
+        if 'file' not in request.files:
+            return jsonify({'error': 'No file part in the request'}), 400
+
+        file = request.files['file']
+        print(f"File received: {file.filename}")  # Logging: File received
+
+        if file.filename == '':
+            return jsonify({'error': 'No selected file'}), 400
+
+        # Check if file is actually received
+        if not file:
+            return jsonify({'error': 'File is required'}), 400
+
+        # Read file content and log it
+        file_content = file.read().decode('utf-8')
+        # Log first 100 characters for validation
+        print(f"File content received: {file_content[:100]}...")
+
+        # Process the file into documents
+        reader = SimpleDirectoryReader(input_files=['../github.txt'])
+        docs = reader.load_data()
+        # Create the knowledge graph and index using updated Settings
+        settings = Settings(chunk_size=256)
+
+        # executor.submit(create_knowledge_graph, docs)
+
+        # Return success response immediately
+        # return jsonify({'message': 'File processed and knowledge graph creation started'}), 200
+
+        graph_store = SimpleGraphStore()
+        storage_context = StorageContext.from_defaults(graph_store=graph_store)
+
+        # Log before creating the index
+        print("Starting the creation of the knowledge graph index...")
+
+        index = KnowledgeGraphIndex.from_documents(
+            documents=docs,
+            max_triplets_per_chunk=3,
+            storage_context=storage_context,
+            # settings=settings,  # Use the new Settings object
+            # include_embeddings=True
+        )
+
+        # Log after creating the index
+        print("Knowledge graph index created successfully.")
+
+        # Store the processed data
+        storage_context.persist(persist_dir='./storage')
+        print("Data persisted to './storage'")
 
         return jsonify({'message': 'File processed and knowledge graph created successfully'}), 200
 
     except Exception as e:
-        return jsonify({'error': str(e)}), 500
-
+        # Log the error with more details
+        print(f"Error occurred: {e}")
+        return jsonify({'error': ''}), 500
 
 # API 2: Query the knowledge graph based on stored information
+
+
 @app.route('/query-knowledge', methods=['POST'])
 def query_knowledge():
     try:
